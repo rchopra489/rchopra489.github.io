@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main2.css">
+    <title>Python Documentation</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <div id="scroll">
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Applications">Applications</a>
+            <a class="nav-link" href="#Alternate_Implementations">Alternate Implementations</a>
+            <a class="nav-link" href="#Notation">Notation</a>
+            <a class="nav-link" href="#Hello_World!">Hello World!</a>
+            <!-- <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Applications">Applications</a>
+            <a class="nav-link" href="#Alternate_Implementations">Alternate Implementations</a>
+            <a class="nav-link" href="#Notation">Notation</a>
+            <a class="nav-link" href="#Hello_World!">Hello World!</a>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Applications">Applications</a>
+            <a class="nav-link" href="#Alternate_Implementations">Alternate Implementations</a>
+            <a class="nav-link" href="#Notation">Notation</a>
+            <a class="nav-link" href="#Hello_World!">Hello World!</a>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Applications">Applications</a>
+            <a class="nav-link" href="#Alternate_Implementations">Alternate Implementations</a>
+            <a class="nav-link" href="#Notation">Notation</a>
+            <a class="nav-link" href="#Hello_World!">Hello World!</a>  -->   
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header><h2>Introduction</h2></header>
+                <p>This reference manual describes the Python programming language. It is not intended as a tutorial.</p>
+                <p>While I am trying to be as precise as possible, I chose to use English rather than formal specifications for everything except syntax and lexical analysis. This should make the document more understandable to the average reader, but will leave room for ambiguities. Consequently, if you were coming from Mars and tried to re-implement Python from this document alone, you might have to guess things and in fact you would probably end up implementing quite a different language. On the other hand, if you are using Python and wonder what the precise rules about a particular area of the language are, you should definitely be able to find them here. If you would like to see a more formal definition of the language, maybe you could volunteer your time — or invent a cloning machine :-).</p>        
+                <p>It is dangerous to add too many implementation details to a language reference document — the implementation may change, and other implementations of the same language may work differently. On the other hand, CPython is the one Python implementation in widespread use (although alternate implementations continue to gain support), and its particular quirks are sometimes worth being mentioned, especially where the implementation imposes additional limitations. Therefore, you’ll find short “implementation notes” sprinkled throughout the text.</p>
+                <p>Every Python implementation comes with a number of built-in and standard modules. These are documented in The Python Standard Library. A few built-in modules are mentioned when they interact in a significant way with the language definition.</p>
+            </section>
+
+        <section id="Applications" class="main-section">
+            <header><h2>Applications</h2></header>
+                <p>Some of the major applications of Python are:</p>
+                <ul>
+                    <li>Massive use in data science, machine learning and deep learning.</li>
+                    <li>Used as a server side lanuage web stack with web frameworks like :- Django and Flask.</li>
+                    <li>Most famous for prototyping products fast and efficiently.</li>
+                    <li>Scalable language.</li>
+                    <li>Used for making GUI's for desktop and Unix systems.</li>
+                </ul>
+        </section>
+                
+        <section id="Alternate_Implementations" class="main-section">
+            <header><h2>Alternate Implementations</h2></header>
+                <p>Though there is one Python implementation which is by far the most popular, there are some alternate implementations which are of particular interest to different audiences.</p>
+                <p>Known implementations inlude:</p>
+                <p><span>CPython</span>This is the original and most-maintained implementation of Python, written in C. New language features generally appear here first.</p>
+                <p><span>Jython</span>Python implemented in Java. This implementation can be used as a scripting language for Java applications, or can be used to create applications using the Java class libraries. It is also often used to create tests for Java libraries. More information can be found at the Jython website.</p>
+            </section>
+                
+        <section id="Notation" class="main-section">
+            <header><h2>Notation</h2></header>
+                <p>The descriptions of lexical analysis and syntax use a modified BNF grammar notation. This uses the following style of definition:</p>
+                
+                <p>The first line says that a name is an lc_letter followed by a sequence of zero or more lc_letters and underscores. An lc_letter in turn is any of the single characters 'a' through 'z'. (This rule is actually adhered to for the names defined in lexical and grammar rules in this document.)
+
+                        Each rule begins with a name (which is the name defined by the rule) and ::=. A vertical bar (|) is used to separate alternatives; it is the least binding operator in this notation. A star (*) means zero or more repetitions of the preceding item; likewise, a plus (+) means one or more repetitions, and a phrase enclosed in square brackets ([ ]) means zero or one occurrences (in other words, the enclosed phrase is optional). The * and + operators bind as tightly as possible; parentheses are used for grouping. Literal strings are enclosed in quotes. White space is only meaningful to separate tokens. Rules are normally contained on a single line; rules with many alternatives may be formatted alternatively with each line after the first beginning with a vertical bar.
+                        
+                        In lexical definitions (as the example above), two more conventions are used: Two literal characters separated by three dots mean a choice of any single character in the given (inclusive) range of ASCII characters. A phrase between angular brackets (<...>) gives an informal description of the symbol defined; e.g., this could be used to describe the notion of ‘control character’ if needed.
+                        
+                        Even though the notation used is almost the same, there is a big difference between the meaning of lexical and syntactic definitions: a lexical definition operates on the individual characters of the input source, while a syntax definition operates on the stream of tokens generated by the lexical analysis. All uses of BNF in the next chapter (“Lexical Analysis”) are lexical definitions; uses in subsequent chapters are syntactic definitions.</p>
+        </section>
+                
+        <section id="Hello_World!" class="main-section">
+            <header><h2>Hello World!</h2></header>
+                <p><span>Hello World!</span> in Python is just one line of code as:</p>
+                <pre>
+                    <code><span>print</span><span>("Hello World!")</span></code>
+                </pre>
+                <pre>
+                    <code>x = int(input("Please enter an integer: "))
+                            Please enter an integer: 42
+                    </code>
+                    <code>if x < 0:
+                             x = 0
+                             <span>print</span>('Negative changed to zero')
+                    </code>
+                    <code>
+                        elif x== 0:
+                        <span>print</span>('Zero')
+                    </code>
+                    <code>
+                        elif x == 1:
+                        <span>print</span>('Single')
+                    </code>
+                    <code>
+                        else:
+                        <span>print</span>('More')
+                    </code>
+                    <samp>Output: More</samp>
+                </pre> 
+        </section>
+    </main>
+</body>
+</html>

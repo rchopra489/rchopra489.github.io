@@ -1,0 +1,142 @@
+html, body{
+    height: 100%;
+    font-family: sans-serif;
+}
+
+a{
+    color: gray;
+}
+
+body{
+    min-height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;;
+}
+
+main #form{
+    padding-top: 20px;
+}
+#form input{
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    height: 45px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    outline-color: #eee;
+    font-size: 16px;
+    padding-left: 20px; 
+}
+
+#form input:hover{
+    box-shadow: 1px 1px 1px 1px gainsboro;
+    background: #fff;
+}
+
+#btn{
+    text-align: center;
+    padding-top: 30px;
+
+}
+#btn button{
+    display: inline block;
+    background-color: #eee;
+    border-width: 0;
+    color: gray;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#btn button:hover{
+    color: black;
+    border: 1px solid gainsboro;
+}
+
+#search-btn{
+    margin-right: 2.5px;
+}
+
+#lucky-btn{
+    margin-left: 2.5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    height: 80px;
+}
+
+footer p{
+    border-top: 1px solid gainsboro;
+    border-bottom:1px solid gainsboro;
+    padding: 15px 30px 15px 30px;
+    font-size: 16px; 
+    color: gray;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+
+}
+footer div{
+    display: inline;
+}
+
+footer #right{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+footer #left{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    padding-bottom: 10px;
+}
+
+#left a, #right a{
+    font-size: 14px;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#mic{
+    position: absolute;
+    width: 15px;
+    height: auto;
+    top: 155px;
+    left: 920px;
+}

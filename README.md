@@ -10,4 +10,5 @@ visit it here:- https://rchopra489.github.io/doc.html
 
 
 Added page.html which is a part of theodinproject.com's first mini project
+Visit it here :- https://rchopra489.github.io/page.html
 Note :-  This page is not responsive nor it is well structured as i am a newbie but decided to post it anyway.

@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar a{
+        text-align: center;
+    }
+}
+
+/* Welcome Section*/
+
+#navbar a{
+    text-decoration: none;
+    color: #008080;
+    padding: 20px 60px 20px 60px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e0ebe8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+}
+
+#welcome-section{
+    display: flex;
+    background-color: #e0ebe8;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 34px;
+}
+h1 span{
+    display: block;
+    font-size: 16px;
+    color: green;
+    font-weight: 100;
+}
+
+
+/*Project section*/
+
+#projects-p{
+    text-align: center;
+    color: #008080;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.project-tile img{
+    display: block;
+    margin-top: 30px;
+    max-width: 200px;
+    height: auto;
+    border: 2px solid #008080;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-tile p{
+    font-size: 16px;
+    color: #008080;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-tile a{
+    display: block;
+}
+.project-tile:hover{
+    box-shadow: inset 10px 10px 10px rgb(240,248,255);
+    background-color: rgb(240,255,240);
+}
+.project-tile{
+    border-radius: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#contact{
+    margin-top: 50px;
+    background-color: #C8F7C5;
+    height: 100vh;
+    width: 100vw;
+}
+
+#contact p{
+    padding-top: 150px; 
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+#contact p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#contact #links a{
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #90C695;
+    border-radius: 100%;
+    color: #008080;
+    background-color: #e0ebe8; 
+    padding: 30px;
+    margin-left: 20px;
+
+}
+#contact #links{
+    margin-top: 150px;
+    padding-left: 530px;
+}
+
+footer{
+    background-color: #22313F;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+footer a{
+    text-decoration: underline;
+    color: white;
+}
+
